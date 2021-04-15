@@ -5,7 +5,6 @@ WORKDIR /opt
 RUN apt-get -yqq update
 RUN DEBIAN_FRONTEND="noninteractive" apt-get -y install tzdata
 RUN apt-get -yqq install gnuradio cmake swig git liborc-0.4-dev python3-venv python3
-# libvolk uhd doxygen log4cpp
 
 # install gnuradio OOT LoRa (gr-lora_sdr)
 RUN git clone --depth 1 https://github.com/martynvdijke/gr-lora_sdr.git /opt/gr-lora_sdr && cd gr-lora_sdr && mkdir -p build && cd build && cmake ../ && make install
@@ -15,8 +14,7 @@ ADD . /opt/loudify-worker
 # set a directory for the app
 WORKDIR /opt/loudify-worker
 # install python dependencies
-RUN python3 -m venv /opt/venv
-RUN . /opt/venv/bin/activate && pip install -r requirements.txt
+RUN pip install -r requirements.txt
 
 
 # tell the port number the container should expose
