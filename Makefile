@@ -38,11 +38,8 @@ requirements:	## Update requirements.txt
 tox:   ## Run tox
 	python -m tox
 
-create_test_service:	##Always running service for testing
-	docker service create --name loudify-worker martynvandijke/loudify-worker:latest /bin/sh -c `“while true; do echo Hello; sleep 2; done”
-
 create_service: ##Create service from docker image
-	docker service create --name loudify-worker martynvandijke/loudify-worker:latest
+	docker service create --name loudify-worker martynvandijke/loudify-worker:dev
 
 build_image: ##Build docker image
 	docker build -t martynvandijke/loudify-worker:latest .
