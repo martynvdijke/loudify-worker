@@ -1,10 +1,8 @@
-FROM ubuntu
+FROM alpine:latest
 
 WORKDIR /opt
 # install gnuradio dependencies
-RUN apt-get -yqq update
-RUN DEBIAN_FRONTEND="noninteractive" apt-get -y install tzdata
-RUN apt-get -yqq install gnuradio cmake swig git liborc-0.4-dev python3-venv python3 python3-pip wget iputils-ping
+RUN apk update && apk add gnuradio --repository=http://dl-cdn.alpinelinux.org/alpine/edge/testing/
 
 # install gnuradio OOT LoRa (gr-lora_sdr)
 RUN git clone --depth 1 https://github.com/martynvdijke/gr-lora_sdr.git /opt/gr-lora_sdr && cd gr-lora_sdr && mkdir -p build && cd build && cmake ../ && make install

@@ -42,6 +42,8 @@ create_service: ##Create service from docker image
 	docker service create --name loudify-worker martynvandijke/loudify-worker:dev
 
 build_image: ##Build docker image
+	mkdir temp
+	git clone --depth 1 https://github.com/martynvdijke/gr-lora_sdr.git temp && cd temp/gr-lora_sdr && mkdir -p build && cd build && cmake ../ && make
 	docker build -t martynvandijke/loudify-worker:latest .
 
 help: ## Show help message
