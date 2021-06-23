@@ -1,7 +1,5 @@
 # encoding: utf-8
-"""
-Helper module for example applications. Mimics ZeroMQ Guide's zhelpers.h.
-"""
+"""Helper module for example applications. Mimics ZeroMQ Guide's zhelpers.h."""
 from __future__ import print_function
 
 import binascii
@@ -13,7 +11,7 @@ import zmq
 
 
 def socket_set_hwm(socket, hwm=-1):
-    """libzmq 2/3/4 compatible sethwm"""
+    """libzmq 2/3/4 compatible sethwm."""
     try:
         socket.sndhwm = socket.rcvhwm = hwm
     except AttributeError:
@@ -21,7 +19,7 @@ def socket_set_hwm(socket, hwm=-1):
 
 
 def dump(msg_or_socket):
-    """Receives all message parts from socket, printing each frame neatly"""
+    """Receive all message parts from socket, printing each frame neatly."""
     if isinstance(msg_or_socket, zmq.Socket):
         # it's a socket, call on current message
         msg = msg_or_socket.recv_multipart()
@@ -38,6 +36,6 @@ def dump(msg_or_socket):
 
 
 def set_id(zsocket):
-    """Set simple random printable identity on socket"""
+    """Set simple random printable identity on socket."""
     identity = u"%04x-%04x" % (randint(0, 0x10000), randint(0, 0x10000))
     zsocket.setsockopt_string(zmq.IDENTITY, identity)

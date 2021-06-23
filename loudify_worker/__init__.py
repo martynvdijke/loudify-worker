@@ -5,6 +5,8 @@ import argparse
 import coloredlogs
 from setuptools_scm import get_version
 
+import loudify_worker
+from . import worker
 __author__ = "Martyn van Dijke"
 __copyright__ = "Martyn van Dijke"
 __license__ = "MIT"
@@ -78,3 +80,4 @@ def main(argv=None) -> None:
     args = parse_args(argv)
     setup_logging(args.loglevel)
     _logger.info("Started loudify worker")
+    loudify_worker.main()

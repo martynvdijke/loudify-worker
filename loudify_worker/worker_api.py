@@ -1,4 +1,4 @@
-"""Worker API"""
+"""Worker API."""
 
 import logging
 import time
@@ -13,7 +13,7 @@ from . import definitions
 
 
 class Worker:
-    """Worker API, Python version
+    """Worker API.
 
     Implements the MDP/Worker spec at http:#rfc.zeromq.org/spec:7.
     """
@@ -39,6 +39,7 @@ class Worker:
     reply_to = None
 
     def __init__(self, broker, service, verbose=False):
+        """Initializer the Worker class."""
         self.broker = broker
         self.service = service
         self.verbose = verbose
@@ -50,7 +51,7 @@ class Worker:
         self.reconnect_to_broker()
 
     def reconnect_to_broker(self):
-        """Connect or reconnect to broker"""
+        """Connect or reconnect to broker."""
         if self.worker:
             self.poller.unregister(self.worker)
             self.worker.close()
@@ -160,8 +161,6 @@ class Worker:
         return None
 
     def destroy(self):
-        """
-        Destroy zmq contex
-        """
+        """Destroy zmq contex."""
         # context.destroy depends on pyzmq >= 2.1.10
         self.ctx.destroy(0)

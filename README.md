@@ -9,6 +9,7 @@
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 [![PyPI](https://img.shields.io/pypi/v/loudfiy_worker)](https://pypi.org/project/loudify_worker)
 [![Downloads](https://pepy.tech/badge/loudfiy_worker)](https://pepy.tech/project/loudfiy_worker)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/9f8d0669f5b74de5bf678a002ea21b48)](https://www.codacy.com/gh/martynvdijke/loudify-worker/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=martynvdijke/loudify-worker&amp;utm_campaign=Badge_Grade)
 
 <!-- PROJECT LOGO -->
 <br />
@@ -33,11 +34,9 @@
 ## Summary
 This project is a worker for the ZMQ broker - worker setup for LoRa and part of a larger project, see [broker](https://github.com/martynvdijke/loudify-broker) and [gr-lora_sdr](https://github.com/martynvdijke/gr-lora_sdr).
 
-
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 Make sure to add or update tests as appropriate.
 
 ## [Changelog](CHANGELOG.md)
-
