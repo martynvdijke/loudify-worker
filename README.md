@@ -6,6 +6,9 @@
 [![docs-dev](https://github.com/martynvdijke/gr-lora_sdr/workflows/docs-dev/badge.svg)](https://martynvdijke.github.io/gr-lora_sdr/html/index.html)
 ![dev test status](https://github.com/martynvdijke/gr-lora_sdr/workflows/dev%20test%20status/badge.svg) -->
 [![GitHub license](https://img.shields.io/github/license/martynvdijke/loudify-worker)](https://github.com/martynvdijke/loudify-worker/blob/dev/LICENSE)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+[![PyPI](https://img.shields.io/pypi/v/loudfiy_worker)](https://pypi.org/project/loudify_worker)
+[![Downloads](https://pepy.tech/badge/loudfiy_worker)](https://pepy.tech/project/loudfiy_worker)
 
 <!-- PROJECT LOGO -->
 <br />
