@@ -1,10 +1,5 @@
-"""Actual Loudify worker
+"""Actual Loudify worker."""
 
-Uses the mdwrk API to hide all MDP aspects
-
-Author: Martyn van Dijke
-Based on ZMQ example by Min RK <benjaminrk@gmail.com>
-"""
 
 import sys
 from . import worker_api
@@ -12,7 +7,12 @@ from . import worker_api
 
 def main():
     """
-    Main function
+    Main function.
+
+    Args:
+        Addres:
+    Returns:
+        None
     """
     verbose = "-v" in sys.argv
     worker = worker_api.Worker("tcp://localhost:5555", b"echo", verbose)

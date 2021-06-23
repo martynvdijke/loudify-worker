@@ -1,6 +1,4 @@
-"""
-Initialisation module
-"""
+"""Initialisation module of loudify_worker."""
 import sys
 import logging
 import argparse
@@ -17,6 +15,8 @@ _logger = logging.getLogger(__name__)
 
 def parse_args(args):
     """
+    Parser for the input arguments.
+
     Args:
         args: cli arguments given to script
 
@@ -46,10 +46,14 @@ def parse_args(args):
 
 
 def setup_logging(loglevel: str) -> None:
-    """Setup basic logging
+    """
+    Setup basic logging functionality.
 
     Args:
       loglevel (int): minimum loglevel for emitting messages
+
+    Returns:
+        None
     """
     logformat = "[%(asctime)s] %(levelname)s:%(name)s:%(message)s"
     logging.basicConfig(
@@ -63,7 +67,8 @@ def setup_logging(loglevel: str) -> None:
 
 def main(argv=None) -> None:
     """
-    Main function of loudify worker
+    Main function of loudify worker.
+
     Args:
         args: sys arguments
 

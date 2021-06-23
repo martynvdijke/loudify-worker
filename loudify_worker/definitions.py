@@ -1,4 +1,4 @@
-"""Majordomo Protocol definitions"""
+"""Majordomo Protocol definitions."""
 #  This is the version of MDP/Client we implement
 C_CLIENT = b"MDPC01"
 

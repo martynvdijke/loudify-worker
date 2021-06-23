@@ -1,10 +1,4 @@
-"""Worker API
-
-Implements the MDP/Worker spec at http:#rfc.zeromq.org/spec:7.
-
-Author: Martyn van Dijke
-Based on Min RK <benjaminrk@gmail.com> ZMQ example
-"""
+"""Worker API"""
 
 import logging
 import time
