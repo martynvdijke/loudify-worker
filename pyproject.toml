@@ -4,6 +4,7 @@ build-backend = "flit_core.buildapi"
 
 [tool.flit.metadata]
 module = "loudify_worker"
+dist-name = "loudify-worker"
 author = "Martyn van Dijke"
 author-email = "martijnvdijke600@gmail.com"
 home-page = "https://github.com/martynvdijke/loudify-worker"
@@ -19,4 +20,4 @@ description-file = "README.md"
 line-length = 100
 
 [tool.flit.scripts]
-loudify_worker = "loudify_worker:main"
+loudify-worker = "loudify_worker:main"
