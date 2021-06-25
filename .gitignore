@@ -11,7 +11,7 @@ virtualenv/*
 ## folders
 src/loudify-worker.egg-info/*
 src/loudify-worker.egg-info/*
-
+loudify_worker/__pycache__/*
 update/*
 update/*
 

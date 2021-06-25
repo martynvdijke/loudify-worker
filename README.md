@@ -7,8 +7,8 @@
 ![dev test status](https://github.com/martynvdijke/gr-lora_sdr/workflows/dev%20test%20status/badge.svg) -->
 [![GitHub license](https://img.shields.io/github/license/martynvdijke/loudify-worker)](https://github.com/martynvdijke/loudify-worker/blob/dev/LICENSE)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
-[![PyPI](https://img.shields.io/pypi/v/loudfiy_worker)](https://pypi.org/project/loudify_worker)
-[![Downloads](https://pepy.tech/badge/loudfiy_worker)](https://pepy.tech/project/loudfiy_worker)
+![PyPI](https://img.shields.io/pypi/v/loudify-worker)
+![PyPI - Downloads](https://img.shields.io/pypi/dw/loudify-worker)
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/9f8d0669f5b74de5bf678a002ea21b48)](https://www.codacy.com/gh/martynvdijke/loudify-worker/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=martynvdijke/loudify-worker&amp;utm_campaign=Badge_Grade)
 
 <!-- PROJECT LOGO -->
