@@ -10,7 +10,7 @@ __author__ = "Martyn van Dijke"
 __copyright__ = "Martyn van Dijke"
 __license__ = "MIT"
 try:
-__version__ = get_version(version_scheme="post-release", local_scheme="no-local-version")
+    __version__ = get_version(version_scheme="post-release", local_scheme="no-local-version")
 except LookupError:
     __version__ = "0.0"
 
